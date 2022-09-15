@@ -8,3 +8,13 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+assets/controllers/*
+assets/controllers.json
+assets/bootstrap.js
+###< symfony/webpack-encore-bundle ###
