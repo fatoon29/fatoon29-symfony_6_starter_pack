@@ -13,6 +13,8 @@ Starter kit to build a symfony app based on symfony skeleton 🎵
 
 3. Start workspace ✌️
 
+4. Run Webpack Encore : `yarn watch`
+
 ## Instalation local with symfony server  🚀 
 
 1. Click on "Use this template"
@@ -27,7 +29,7 @@ Starter kit to build a symfony app based on symfony skeleton 🎵
 
 6. Run yarn : `yarn install`
 
-7. Run Webpack Encore : `yarn encore dev --watch`
+7. Run Webpack Encore : `yarn watch`
 
 8. Run : `symfony server:start` ⚙️
 
