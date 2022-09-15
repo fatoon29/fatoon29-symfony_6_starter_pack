@@ -1,0 +1,23 @@
+
+ports:
+  - port: 8000
+    onOpen: open-preview
+
+tasks:
+  - name: Variables injection & Dependencies
+    init: |
+      yarn
+      yarn build
+      composer update --no-interaction
+    command: |
+      php -S 0.0.0.0:8000 -t public/
+vscode:
+  extensions:
+    - felixfbecker.php-debug
+    - bmewburn.vscode-intelephense-client
+    - mblode.twig-language-2
+    - eamodio.gitlens
+    - phproberto.vscode-php-getters-setters
+    - bmewburn.vscode-intelephense-client
+    - mehedidracula.php-namespace-resolver
+    - nadim-vscode.symfony-extension-pack
