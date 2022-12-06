@@ -50,3 +50,5 @@ Starter kit to build a symfony app based on symfony skeleton 🎵
 - Validator
 - Mailer
 - Webpack encore
+- SensioFrameworkExtraBundle
+- ORM Pack
