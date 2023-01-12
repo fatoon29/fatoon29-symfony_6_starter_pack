@@ -56,8 +56,11 @@ Encore
         config.corejs = 3;
     })
 
+    .configureImageRule({filename: '[path][name].[ext]'})
+    .copyFiles([{context: './', from: './assets/images', to: '[path][name].[ext]'}])
+
     // enables Sass/SCSS support
-    //.enableSassLoader()
+    .enableSassLoader()
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
