@@ -1,0 +1,1 @@
+web: env | grep SYMFONY_ | cut -c9- > .env.local; heroku-php-nginx -C nginx.conf public/

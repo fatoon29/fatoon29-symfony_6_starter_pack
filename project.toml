@@ -1,0 +1,12 @@
+[project]
+id = "io.buildpacks.rdi-website"
+name = "RDI-Website"
+version = "1.0.0"
+
+[build]
+
+[[build.buildpacks]]
+uri = "heroku/nodejs"
+
+[[build.buildpacks]]
+uri = "heroku/php"
