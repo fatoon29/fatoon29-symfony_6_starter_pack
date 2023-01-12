@@ -1,6 +1,6 @@
 [project]
-id = "io.buildpacks.rdi-website"
-name = "RDI-Website"
+id = "io.buildpacks.EXAMPLE"
+name = "EXAMPLE"
 version = "1.0.0"
 
 [build]
