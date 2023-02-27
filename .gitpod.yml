@@ -17,7 +17,7 @@ vscode:
     - bmewburn.vscode-intelephense-client
     - mblode.twig-language-2
     - eamodio.gitlens
-    - phproberto.vscode-php-getters-setters
+    - mykhailokushnir.vscode-php-getter-setter 
     - bmewburn.vscode-intelephense-client
     - mehedidracula.php-namespace-resolver
     - nadim-vscode.symfony-extension-pack
