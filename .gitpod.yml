@@ -21,3 +21,6 @@ vscode:
     - bmewburn.vscode-intelephense-client
     - mehedidracula.php-namespace-resolver
     - nadim-vscode.symfony-extension-pack
+    - oderwat.indent-rainbow
+    - zignd.html-css-class-completion
+    - tonybaloney.vscode-pets
