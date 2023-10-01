@@ -1,18 +1,12 @@
 [project]
-id = "io.buildpacks.bbh-website"
-name = "BBH-Website"
+id = "io.buildpacks.xxx"
+name = "xxx-Website"
 version = "1.0.0"
 
 [build]
 
 [[build.buildpacks]]
-id = "me/symfony-env"
-
-  [build.buildpacks.script]
-  api = "0.6"
-  inline = "env | grep SYMFONY_ | cut -c9- > .env"
+uri = "heroku/nodejs"
 
 [[build.buildpacks]]
 uri = "heroku/php"
-[[build.buildpacks]]
-uri = "heroku/procfile"
