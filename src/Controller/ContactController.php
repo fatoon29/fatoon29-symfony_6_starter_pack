@@ -35,4 +35,22 @@ class ContactController extends AbstractController
     {
         return $this->render('contact/contact-success.html.twig');
     }
+
+    private function captchaverify($recaptcha){
+        
+        $googleSecret = $_ENV["GOOGLE_CAPTCHA_SECRET"];
+        
+        $url = "https://www.google.com/recaptcha/api/siteverify?secret=$googleSecret&response=$recaptcha";
+
+        $curl = curl_init($url);
+        curl_setopt($curl, CURLOPT_HEADER, false);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_TIMEOUT, 1);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+        $response = curl_exec($curl);
+        
+        $response = json_decode($response);
+
+        return $response->success;        
+    }
 }
